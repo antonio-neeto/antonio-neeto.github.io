@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Miroski</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-fluid d-flex justify-content-center align-items-center min-vh-100 bg-gray-light">
+        <div class="row w-100 justify-content-center">
+            <div class="col-md-6 col-lg-8 bg-white shadow p-3,5">
+                <div class="d-flex justify-content-between align-items-center mb-1 logo-container">
+                    <h1 id="titulo-contato" class="text-red">Entre em contato</h1>
+                    <img id="logo-contato" src="assets/Logo2.png" alt="Miroski Logo" class="img-fluid">
+                </div>
+                <ul class="orientacoes-contato">
+                    <li>Para realizar o cadastro e manter contato com nossa consultoria, por favor, preencha o formulário abaixo. Isso nos permitirá verificar se o sistema atende às suas demandas e concluir seu cadastro.</li>
+                    <li>Se precisar de suporte técnico, também preencha o formulário.</li>
+                    <li>Atenção ao preencher o motivo, pois isso garantirá que sua solicitação seja enviada para a equipe correta. </li>
+                </ul>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-8 col-lg-8">
+                            <label for="nome">Nome Completo</label>
+                            <input type="text" id="nome" class="form-control" placeholder="Seu nome">
+                        </div>
+                        <div class="form-group col-md-4 col-lg-4">
+                            <label for="telefone">Número de telefone</label>
+                            <input type="tel" id="telefone" class="form-control" placeholder="Seu telefone">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-8 col-lg-8">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" class="form-control" placeholder="Seu email">
+                        </div>
+                        <div class="form-group col-md-4 col-lg-4">
+                            <label for="motivo">Motivo do Contato</label>
+                            <select id="motivo" class="form-control">
+                            <option>Selecione o motivo</option>  
+                            <option>Suporte ao sistema</option>
+                            <option>Análise para cadastro</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="descricao">Descrição da Solicitação</label>
+                        <textarea id="descricao" class="form-control" rows="4" placeholder="Descreva sua solicitação"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-danger btn-block">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

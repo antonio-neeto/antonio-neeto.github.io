@@ -5,24 +5,26 @@
 .bg-white {
     background-color: #FFFFFF;
     border-radius: 15px;
+    padding: 20px;
+    max-width: 100%; 
+    box-sizing: border-box; 
 }
 
 .shadow {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-form .form-control {
+.form-control {
     height: 45px;
     font-size: 1rem;
 }
 
-form .btn {
+.btn {
     height: 40px;
     font-size: 1rem;
-}
-
-img {
-    max-width: 100%;
+    background-color: #FF3131; 
+    color: #FFFFFF;
+    border: none;
 }
 
 h2 {
@@ -41,12 +43,6 @@ h2 {
     top: 15%;
 }
 
-form .btn {
-    background-color: #FF3131; 
-    color: #FFFFFF;
-    border: none;
-}
-
 .form-footer {
     color: #555555;
     font-size: 0.875rem;
@@ -57,19 +53,18 @@ form .btn {
 .form-footer a {
     color: #555555; 
     text-decoration: none;
+    display: block;
 }
 
 .form-footer a:hover {
     text-decoration: underline;
 }
 
-h1 {
+#titulo-contato {
     color: #FF3131; 
-    margin-top: none;
-    margin-left: 20px;
 }
 
-.logo {
+#logo-contato {
     margin-top: 20px;
     margin-right: 20px;
 }
@@ -83,4 +78,35 @@ ul.orientacoes-contato {
 ul.orientacoes-contato li {
     color: #555555;
     margin-bottom: 5px;
+}
+
+@media (max-width: 490px) {
+    .form-footer {
+        text-align: center;
+        width: 100%;
+    }
+
+    .linha {
+        display: none;
+    }
+
+    .logo-container img {
+        display: none;
+    }
+
+}
+
+.form-row .form-group {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 767px) {
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-group {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
 }
